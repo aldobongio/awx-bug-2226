@@ -1,0 +1,13 @@
+- name: Bug 2226
+  hosts: all
+  gather_facts: false
+  tasks:
+  - local_action:
+      module: debug
+      msg: 'password {{ password }}' 
+  - local_action:
+      module: debug
+      msg: 'foo.password: {{ foo.password }}' 
+  - local_action:
+      module: debug
+      msg: "bar.baz[0].password: {{ bar.baz[0].password }}"
