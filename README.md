@@ -1,1 +1,1 @@
-# awx-bug-2226
+https://github.com/ansible/awx/issues/2226
